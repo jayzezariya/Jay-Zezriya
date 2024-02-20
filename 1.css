@@ -1,0 +1,77 @@
+.page{
+    background-color: rgb(140, 223, 248);
+    height: 330px;
+    width: 1000px
+}
+.b1{
+    background-color: rgb(187, 27, 219);
+    height: 25px;
+    margin :10px;
+}
+.b2{
+    background-color: orange;
+    height: 250px;
+
+}
+.b3{
+    background-color: black;
+    color: white;
+    height: 18px;
+    width: 500px;
+    margin-left: 10px;
+}
+.b4{
+    background-color: black;
+    margin-top: 5px;
+    color: white;
+    height: 18px;
+    width: 500px;
+    margin-left: 10px;
+}
+.b5{
+    background-color: black;
+    margin-top: 5px;
+    color: white;
+    height: 18px;
+    width: 500px;
+    margin-left: 10px;
+}
+.b6{
+    background-color: black;
+    color: white;
+    height: 65px;
+    width: 300px;
+    margin-left: 10px;
+    float:right;
+    margin-right:100px;
+    margin-top: -65px;
+}
+@media (max-width: 350px){
+    .b6{
+        background-color: black;
+        color: white;
+        height: 65px;
+        width: 300px;
+        margin-top: 10px;
+        float:left;
+        margin-left: 10px;
+    }
+}
+.f{
+  background-color: blue;
+  color: white;
+
+}
+.c1{
+  background-color: black;
+  width: 500px;
+  height: 30px;
+}
+.c2{
+  background-color: rgb(213,20,20);
+  color: white;
+  width: 350px;
+  height: 70px;
+  margin-left: 70px;
+  margin-top: 5px;
+}
