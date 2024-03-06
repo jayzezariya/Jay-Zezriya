@@ -1,0 +1,175 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAb14b</title>
+    <style type="text/css">
+        *{
+            box-sizing: border-box;
+        }
+        
+        .bg{
+            background-image: linear-gradient(135deg,white,skyblue,lightpink);
+            height: 100%;
+            width: 100%;
+            border-radius: round;
+            border: 1px solid skyblue;
+            padding: 7%;
+        }
+        .main{
+            height: 100%;
+            width:100%;
+        }
+        .main1{
+            background-color: rgb(239, 235, 235);
+            height: 100%;
+            width: 50%;
+            float: left;
+        }
+        .image1{
+            height: 3%;
+            width: 3%;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .image2{
+            height: 50%;
+            width: 80%;
+            margin-top: 50px;
+            margin-left: 40px;
+        }
+        .image3{
+            height: 4%;
+            width: 4%;
+            margin-top: 50px;
+            margin-left: 20px;
+        }
+        .main2{
+            background-color: rgb(255, 255, 255);
+            height: 100%;
+            width: 50%;
+            float: right;
+        }
+        .image4{
+            height: 4%;
+            width: 4%;
+            margin-top: 15px;
+            margin-left: 30px;
+            float: left;
+        }
+        .text1{
+            color: blue;
+            margin-top: 15px;
+        }
+        .text2{
+            color: rgb(227, 230, 232);
+            font-weight:10px ;
+            margin-left: 30px;
+            margin-top: 5px;
+        }
+        .text3{
+            color: black;
+            font-size: 30px;
+            margin-left:30px ;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .image5{
+            height: 10%;
+            width: 25%;
+            margin-left: 20px;
+            float: left;
+        }
+        .text4{
+            color: black;
+            margin-left:30px ;
+            margin-top: 20px;
+        }
+        .text5{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+            margin-left: 30px;
+        }
+        .box1{
+            margin-left: 30px;
+            margin-top: 10px;
+        }
+        .tab1{
+            border: 1px solid rgb(96, 92, 92);
+            border-radius: 15px;
+            font-size: 15px;
+            height: 4%;
+            width: 11%;
+            padding-left: 4px;
+            margin-left:15px;
+            margin-top: 5px;
+            float: left;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .tab2{
+            border: 1px solid rgb(82, 80, 80);
+            border-radius: 15px;
+            font-size: 15px;
+            height: 4%;
+            width: 16%;
+            padding-left: 15px;
+            margin-left:15px;
+            margin-top: 5px;
+            float: left;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .tab3{
+            border: 1px solid rgb(116, 112, 112);
+            border-radius: 15px;
+            font-size: 15px;
+            height: 4%;
+            width: 10%;
+            padding-left: 10px;
+            margin-left:15px;
+            margin-top: 5px;
+            float: left;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .color{
+            margin-left: 25px;
+            font-family:Georgia, 'Times New Roman', Times, serif ;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <div class="main">
+            <div class="main1">
+                <img class="image1" src="https://cdns.iconmonstr.com/wp-content/releases/preview/7.1.0/240/iconmonstr-line-three-horizontal-lined.png"><br>
+                <img class="image1" src="data:image/png;base64,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"><br>
+                <img class="image2" src="https://foyr.com/learn/wp-content/uploads/2022/05/guest-room-in-a-house-1024x752.jpg"><br>
+                <img class="image3" src="https://cdn3.vectorstock.com/i/1000x1000/73/37/user-icon-male-person-symbol-profile-avatar-vector-20787337.jpg"><br>
+                <img class="image3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnUYI7m4RuNnFX_2PJxXuXNr49EPudUgvLEA&usqp=CAU">
+            </div>
+            <div class="main2">
+                <img class="image4" src="https://www.pngkey.com/png/detail/168-1680888_set-left-blue-arrow-future-direction-color-left.png">
+                <div class="text1">Back to bedroom</div><br>
+                <div class="text2">BEDROOM</div>
+                <div class="text3">College Essentials</div>
+                <img class="image5" src="https://t4.ftcdn.net/jpg/02/74/86/39/360_F_274863915_4JnfDXwTaTsjg5w5e7keElOipBswjAte.jpg">
+                <div class="text4">4.4(328 review)</div><br>
+                <div class="text5">Select Quality</div>
+                <div class="box1">
+                    <table border="3px black">
+                        <tr>
+                            <td>Basic</td>
+                            <td>Premium</td>
+                        </tr>
+                    </table>
+                </div><br>
+                <div class="text5">Style</div>
+                <div class="tab1">Minimal</div>
+                <div class="tab2">Bohemian</div>
+                <div class="tab3">Floral</div>
+                <div class="tab3">Other</div><br><br>
+                <div class="color">Color</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
